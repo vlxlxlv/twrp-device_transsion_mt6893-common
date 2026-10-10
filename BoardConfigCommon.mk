@@ -161,3 +161,6 @@ TW_CUSTOM_BATTERY_POS := "790"
 
 # Hack depends
 ALLOW_MISSING_DEPENDENCIES := true
+
+OF_FLASHLIGHT_ENABLE := 1
+OF_FL_PATH1 := /tmp/of_torch

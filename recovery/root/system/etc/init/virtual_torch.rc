@@ -1,0 +1,10 @@
+# recovery/root/system/etc/init/virtual_torch.rc
+service virtual_torch /system/bin/virtual_torch.sh
+    user root
+    group root
+    seclabel u:r:recovery:s0
+    disabled
+
+on boot
+    wait /sys/class/torch/torch/torch_level
+    start virtual_torch
